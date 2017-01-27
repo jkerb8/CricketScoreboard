@@ -82,84 +82,84 @@
             <Button
                 android:id="@+id/p1minus1"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p1minus2"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p1minus3"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p1minus4"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p1minus5"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p1minus6"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p1minus7"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
@@ -180,78 +180,78 @@
 
             <ImageButton
                 android:id="@+id/p1plus1"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p1plus2"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p1plus3"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p1plus4"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p1plus5"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p1plus6"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p1plus7"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
@@ -272,84 +272,84 @@
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:text="20"/>
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:text="19"/>
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:text="18"/>
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:text="17"/>
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:text="16"/>
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:text="15"/>
 
             <TextView
                 android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:text="B"/>
@@ -371,80 +371,80 @@
 
             <ImageButton
                 android:id="@+id/p2plus1"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p2plus2"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p2plus3"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p2plus4"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p2plus5"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p2plus6"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/p2plus7"
-                android:layout_width="40dp"
-                android:layout_height="36dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/nada"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
 
         </LinearLayout>
 
@@ -464,84 +464,84 @@
             <Button
                 android:id="@+id/p2minus1"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p2minus2"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p2minus3"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p2minus4"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p2minus5"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p2minus6"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/p2minus7"
                 android:layout_width="55dp"
-                android:layout_height="36dp"
+                android:layout_height="43dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:text=""
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 
@@ -568,47 +568,69 @@
         <TextView
             android:id="@+id/p1ScoreText"
             android:layout_width="55dp"
-            android:layout_height="36dp"
+            android:layout_height="43dp"
             android:background="@android:color/transparent"
             android:textColor="@color/colorAccent"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:text=""
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp" />
 
         <View
-            android:layout_width="60dp"
+            android:layout_width="3dp"
+            android:layout_height="0dp"/>
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <View
+            android:layout_width="3dp"
             android:layout_height="0dp"/>
 
         <Button
             android:id="@+id/resetButton"
-            android:layout_width="62dp"
+            android:layout_width="66dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/lineView6"
             android:text="RESET"
             android:background="@color/colorPrimaryDark"
             android:textColor="@color/colorPrimary"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
 
         <View
-            android:layout_width="60dp"
+            android:layout_width="3dp"
+            android:layout_height="0dp"/>
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <View
+            android:layout_width="3dp"
             android:layout_height="0dp"/>
 
         <TextView
             android:id="@+id/p2ScoreText"
             android:layout_width="55dp"
-            android:layout_height="36dp"
+            android:layout_height="43dp"
             android:background="@android:color/transparent"
             android:textColor="@color/colorAccent"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:text=""
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="5dp"/>
 
     </LinearLayout>
 

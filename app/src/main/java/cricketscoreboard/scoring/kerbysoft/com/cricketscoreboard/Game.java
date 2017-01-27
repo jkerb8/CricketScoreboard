@@ -3,10 +3,12 @@ package cricketscoreboard.scoring.kerbysoft.com.cricketscoreboard;
 
 public class Game {
     private Player player1, player2;
+    boolean over;
 
     Game() {
         player1 = new Player();
         player2 = new Player();
+        over = false;
     }
 
     public void hit(int player, int number) {
@@ -47,6 +49,7 @@ public class Game {
     public void reset() {
         player1.reset();
         player2.reset();
+        over = false;
     }
 
     public Player getPlayer1() {

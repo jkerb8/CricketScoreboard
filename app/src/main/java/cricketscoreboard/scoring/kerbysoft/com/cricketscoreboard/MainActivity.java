@@ -1,9 +1,12 @@
 package cricketscoreboard.scoring.kerbysoft.com.cricketscoreboard;
 
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.ContextThemeWrapper;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -89,12 +92,82 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resetBtn.setOnClickListener(this);
 
         game = new Game();
+
+        if(!(SaveSharedPreference.getPlayerOne(getApplicationContext()).length() == 0))
+        {
+            game.getPlayer1().name = SaveSharedPreference.getPlayerOne(getApplicationContext());
+            p1EditText.setText(game.getPlayer1().name);
+        }
+        if(!(SaveSharedPreference.getPlayerTwo(getApplicationContext()).length() == 0))
+        {
+            game.getPlayer2().name = SaveSharedPreference.getPlayerTwo(getApplicationContext());
+            p2EditText.setText(game.getPlayer2().name);
+        }
+
     }
+
+    @Override
+    public void onBackPressed() {
+        exitGameDialog();
+    }
+
+    private void exitGameDialogold() {
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+        builder
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                })
+                .show();
+
+    }
+
+    private void exitGameDialog() {
+        AlertDialog.Builder customBuilder = new AlertDialog.Builder(new ContextThemeWrapper(this,android.R.style.Theme_Dialog));
+
+        customBuilder.setTitle("Are you sure you want to exit?");
+        customBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        customBuilder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+
+        AlertDialog dialog = customBuilder.create();
+        dialog.show();
+
+        Button b = dialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+        Button ok = dialog.getButton(DialogInterface.BUTTON_POSITIVE);
+
+        if((b != null) && (ok != null)) {
+            b.setTextColor(getResources().getColor(R.color.colorPrimary));
+            ok.setTextColor(getResources().getColor(R.color.colorPrimary));
+        }
+    }
+
 
     @Override
     public void onClick(View view) {
         p1EditText.clearFocus();
         p2EditText.clearFocus();
+
+        game.getPlayer1().name = p1EditText.getText().toString();
+        game.getPlayer2().name = p2EditText.getText().toString();
+        SaveSharedPreference.setPlayerOne(getApplicationContext(), game.getPlayer1().name);
+        SaveSharedPreference.setPlayerTwo(getApplicationContext(), game.getPlayer2().name);
 
         switch (view.getId()) {
             case R.id.resetButton:
@@ -298,6 +371,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if (p2Fin && game.getPlayer1().getTotalScore() < game.getPlayer2().getTotalScore()) {
             showWinner(2);
         }
+        else {
+            game.over = false;
+        }
     }
 
     public void showWinner(int player) {
@@ -311,15 +387,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else {
             return;
         }
-        new AlertDialog.Builder(this)
-                .setTitle("Game Over")
-                .setMessage(winner + " has won the game!")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        //close
-                    }
-                })
-                .setIcon(android.R.drawable.ic_dialog_info)
-                .show();
+        if (!game.over) {
+            game.over = true;
+            new AlertDialog.Builder(this)
+                    .setTitle(winner + " has won the game!")
+                    .setMessage("Would you like to start a new game?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            game.reset();
+                            updateVisuals();
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            //close
+                        }
+                    })
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .show();
+        }
     }
 }
