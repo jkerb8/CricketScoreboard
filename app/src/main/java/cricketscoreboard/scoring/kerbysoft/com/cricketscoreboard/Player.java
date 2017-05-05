@@ -16,6 +16,12 @@ public class Player {
         name = "";
     }
 
+    public void calculateTotal() {
+        for (int i=0; i<7; i++) {
+            totalScore += scores[i];
+        }
+    }
+
     public int hit(int number) {
         if (states[number] < 3) {
             return states[number]++;
