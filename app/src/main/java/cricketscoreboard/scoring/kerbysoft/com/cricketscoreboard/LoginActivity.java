@@ -47,8 +47,10 @@ import cz.msebera.android.httpclient.client.HttpClient;
 import cz.msebera.android.httpclient.client.entity.UrlEncodedFormEntity;
 import cz.msebera.android.httpclient.client.methods.HttpGet;
 import cz.msebera.android.httpclient.client.methods.HttpPost;
+import cz.msebera.android.httpclient.entity.StringEntity;
 import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
 import cz.msebera.android.httpclient.message.BasicNameValuePair;
+import cz.msebera.android.httpclient.protocol.HTTP;
 import cz.msebera.android.httpclient.util.EntityUtils;
 
 import static android.Manifest.permission.READ_CONTACTS;
@@ -345,7 +347,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
 
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost(loginURL);
-            String message = "";
+            String message;
 
             try {
                 //Authentication
@@ -353,12 +355,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                         (APIUser + ":" + API_KEY).getBytes(),
                         Base64.NO_WRAP);
                 httppost.setHeader("Authorization", encoded);
-                
-                // Add your data
-                List<NameValuePair> nameValuePairs = new ArrayList<>(2);
-                nameValuePairs.add(new BasicNameValuePair("email", mEmail));
-                nameValuePairs.add(new BasicNameValuePair("password", mPassword));
-                httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+                httppost.setHeader(HTTP.CONTENT_TYPE,"application/json");
+
+                //add the data
+                JSONObject obj = new JSONObject();
+                obj.put("email", mEmail);
+                obj.put("password", mPassword);
+
+                httppost.setEntity(new StringEntity(obj.toString(), "UTF-8"));
 
                 // Execute HTTP Post Request
                 HttpResponse response = httpclient.execute(httppost);

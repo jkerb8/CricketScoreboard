@@ -11,7 +11,7 @@
 
     <style name="ButtonTheme" parent="@android:style/Widget.Button">
         <item name="android:gravity">center_vertical|center_horizontal</item>
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">18dip</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/button</item>
