@@ -24,21 +24,37 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button newGameBtn, continueGameBtn, settingsBtn;
+    Button newGameBtn, continueGameBtn, settingsBtn, logoutBtn;
     Toast m_currentToast;
+    Boolean loggedIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        if(SaveSharedPreference.getFirstTime(getApplicationContext())) {
+            Installation.id(getApplicationContext());
+            SaveSharedPreference.setFirstTime(getApplicationContext(), false);
+        }
+
+        loggedIn = !(SaveSharedPreference.getUserName(getApplicationContext()).length() == 0);
+
+        if (!loggedIn) {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         newGameBtn = (Button) this.findViewById(R.id.newGameBtn);
         continueGameBtn = (Button) this.findViewById(R.id.continueGameBtn);
         settingsBtn = (Button) this.findViewById(R.id.settingsBtn);
+        logoutBtn = (Button) this.findViewById(R.id.logoutBtn);
 
         newGameBtn.setOnClickListener(this);
         continueGameBtn.setOnClickListener(this);
         settingsBtn.setOnClickListener(this);
+        logoutBtn.setOnClickListener(this);
     }
 
     @Override
@@ -58,9 +74,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.settingsBtn:
                 showMessage("Coming soon...");
                 break;
-
+            case R.id.logoutBtn:
+                if (loggedIn)
+                    logout();
+                else {
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
         }
 
+    }
+
+    public void logout() {
+
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+
+        builder
+                .setMessage("Are you sure you want to log out?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        SaveSharedPreference.setUserName(getApplicationContext(), "");
+                        SaveSharedPreference.setPassword(getApplicationContext(), "");
+                        SaveSharedPreference.setId(getApplicationContext(), 0);
+                        SaveSharedPreference.setTeamname(getApplicationContext(), "");
+
+                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        //dismiss
+                    }
+                })
+                .show();
     }
 
     public void showMessage(String message) {
