@@ -71,6 +71,16 @@
                 android:textColor="#FFFFFF"
                 style="@style/ButtonTheme" />
 
+            <Button
+                android:id="@+id/createUserBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Create New User"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                style="@style/ButtonTheme" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

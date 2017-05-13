@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.LoaderManager;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -104,6 +105,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        Button mCreateUserBtn = (Button) findViewById(R.id.createUserBtn);
+        mCreateUserBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, CreateUserActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -332,7 +342,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         private int mId;
         private int statusCode;
         private String loginURL = "http://192.168.1.104:2017/darts/authenticateUser";
-        String APIUser = "dartswithpals", API_KEY = "yed7a876-y0gz-11e6-9d9d-cth0c932ce02";
+        private String APIUser = "dartswithpals", API_KEY = "yed7a876-y0gz-11e6-9d9d-cth0c932ce02";
 
         UserLoginTask(String email, String password) {
             mEmail = email;
@@ -387,8 +397,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         protected void onPostExecute(final JSONObject message) {
             mAuthTask = null;
             showProgress(false);
-            Log.d("RESULT", result);
-            Log.d("StatusCode", Integer.toString(statusCode));
 
             if (message != null) {
 
@@ -408,7 +416,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
 
                 showMessage("username: " + mUsername);
                 exitLogin();
-                finish();
             }
             else {
                 //showMessage(Integer.toString(statusCode));
