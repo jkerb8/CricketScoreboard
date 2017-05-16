@@ -121,13 +121,13 @@ public class CreateUserActivity extends AppCompatActivity {
         m_currentToast.show();
     }
 
-    public class CreateUserTask extends AsyncTask<Void, Void, JSONObject> {
+    private class CreateUserTask extends AsyncTask<Void, Void, JSONObject> {
 
         private final String mEmail;
         private final String mPassword;
         private String mUsername;
         private int statusCode;
-        private String loginURL = "http://192.168.1.104:2017/darts/createUser";
+        private String loginURL = "http://192.168.0.101:2017/darts/createUser";
         private String APIUser = "dartswithpals", API_KEY = "yed7a876-y0gz-11e6-9d9d-cth0c932ce02";
 
         CreateUserTask(String email, String username, String password) {

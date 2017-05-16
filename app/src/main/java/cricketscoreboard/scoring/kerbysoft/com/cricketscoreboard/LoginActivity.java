@@ -341,7 +341,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         private String mUsername;
         private int mId;
         private int statusCode;
-        private String loginURL = "http://192.168.1.104:2017/darts/authenticateUser";
+        private String loginURL = "http://192.168.0.101:2017/darts/authenticateUser";
         private String APIUser = "dartswithpals", API_KEY = "yed7a876-y0gz-11e6-9d9d-cth0c932ce02";
 
         UserLoginTask(String email, String password) {

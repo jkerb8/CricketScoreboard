@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button newGameBtn, continueGameBtn, settingsBtn, logoutBtn;
+    Button newGameBtn, continueGameBtn, friendsBtn, settingsBtn, logoutBtn;
     Toast m_currentToast;
     Boolean loggedIn;
 
@@ -48,11 +48,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         newGameBtn = (Button) this.findViewById(R.id.newGameBtn);
         continueGameBtn = (Button) this.findViewById(R.id.continueGameBtn);
+        friendsBtn = (Button) this.findViewById(R.id.friendsBtn);
         settingsBtn = (Button) this.findViewById(R.id.settingsBtn);
         logoutBtn = (Button) this.findViewById(R.id.logoutBtn);
 
         newGameBtn.setOnClickListener(this);
         continueGameBtn.setOnClickListener(this);
+        friendsBtn.setOnClickListener(this);
         settingsBtn.setOnClickListener(this);
         logoutBtn.setOnClickListener(this);
     }
@@ -70,6 +72,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent contIntent = new Intent(MainActivity.this, CricketActivity.class);
                 contIntent.putExtra("openingPastGame", true);
                 startActivity(contIntent);
+                break;
+            case R.id.friendsBtn:
+                Intent friendIntent = new Intent(MainActivity.this, FriendsActivity.class);
+                startActivity(friendIntent);
                 break;
             case R.id.settingsBtn:
                 showMessage("Coming soon...");
