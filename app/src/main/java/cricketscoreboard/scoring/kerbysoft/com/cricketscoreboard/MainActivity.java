@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             SaveSharedPreference.setFirstTime(getApplicationContext(), false);
         }
 
-        loggedIn = !(SaveSharedPreference.getUserName(getApplicationContext()).length() == 0);
+        //loggedIn = !(SaveSharedPreference.getUserName(getApplicationContext()).length() == 0);
+        loggedIn = true;
 
         if (!loggedIn) {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);

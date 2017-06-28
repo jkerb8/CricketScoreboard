@@ -129,7 +129,7 @@ public class CricketActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void exitGameDialogold() {
-        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this, R.style.AlertDialogTheme);
         builder
                 .setMessage("Are you sure you want to exit?")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
